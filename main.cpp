@@ -30,7 +30,7 @@ while(stillPlay == true) {
             cin.clear();
             cout << "You guessed the correct number in " << guessCount + 1 << " guesses! " << endl; //outputs guesscount 
             cout << "Play again?" << endl;
-            cout << "Do you want to play again? (Y/N): " << endl;
+            cout << "Do you want to play again? (y/n): " << endl;
             break; // breaks out of loop 
         }
     }
