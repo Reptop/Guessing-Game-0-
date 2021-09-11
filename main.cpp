@@ -30,18 +30,19 @@ while(stillPlay == true) {
             cin.clear();
             cout << "You guessed the correct number in " << guessCount + 1 << " guesses! " << endl; //outputs guesscount 
             cout << "Play again?" << endl;
-            cout << "enter y for yes or n for no: " << endl;
-            cin >> h; 
-            switch(h) { //switch statement for yes or no cases
-                case 'y':
-                main(); //call main function if they want to play again 
-                break; 
-                case 'n': 
-                stillPlay = false; // otherwise still play is false and break 
-                break; 
-            }
-
+            cout << "Do you want to play again? (Y/N): " << endl;
+            break; // breaks out of loop 
         }
+    }
+    cin >> h; 
+    switch(h) { //switch statement for yes or no cases
+        case 'y':
+        main(); //call main function using recrsion if they want to play again 
+        break; 
+        case 'n': 
+        stillPlay = false; // otherwise still play is false and break 
+        cout << "Thank you for playing" << endl; 
+        break; 
     } 
     return 0; 
 }
